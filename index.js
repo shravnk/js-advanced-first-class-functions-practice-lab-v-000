@@ -23,3 +23,6 @@ function totalRevenue(drivers) {
     return agg + el.revenue}
   return drivers.reduce(getRevenue, 0)
 }
+function averageRevenue(drivers) {
+  return totalRevenue(drivers)/drivers.length
+}
