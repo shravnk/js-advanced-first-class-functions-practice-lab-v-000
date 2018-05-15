@@ -21,5 +21,5 @@ function totalRevenue(drivers) {
   const getRevenue = function (agg, el, i, arr) {
     console.log(agg, el.revenue)
     return agg + el.revenue}
-  drivers.reduce(getRevenue, 0)
+  return drivers.reduce(getRevenue, 0)
 }
