@@ -8,3 +8,7 @@ function logDriversByHometown(drivers, location) {
   function printName (el, i, arr) {if (el.hometown === location) {console.log(el.name)}}
   return drivers.forEach(printName)
 }
+
+function driversByRevenue(drivers) {
+  return drivers.sort(function(a,b){a.revenue - b.revenue})
+}
